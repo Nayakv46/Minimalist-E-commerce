@@ -1,0 +1,107 @@
+.raouf__sideCart-product{
+    display: flex;
+    background-color: #f2f2f2;
+    border: 1px solid #717171;
+    border-radius: 5px;
+}
+
+.raouf__sideCart-product_image{
+    background-color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex: 2;
+    border-radius: 5px;
+}
+
+.raouf__sideCart-product_image > a > img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    border-radius: 5px;
+}
+
+.raouf__sideCart-product_description{
+    flex: 5;
+    display: flex;
+    justify-content: space-between;
+    padding: 0.5rem;
+    gap: 1rem;
+}
+
+
+.raouf__sideCart-product_description-left{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    font-weight: 500;
+    font-size: 22px;
+    gap: 1rem;
+}
+
+.raouf__sideCart-product_description-left > a {
+    text-decoration: none;
+    color: #000;
+}
+
+.raouf__sideCart-product_description-left_countHandler{
+    display: flex;
+}
+
+.raouf__sideCart-product_description-left_countHandler > input,
+.raouf__sideCart-product_description-left_countHandler > button{
+    width: 25px;
+    height: 25px;
+    text-align: center;
+    border-radius: 0px;
+}
+.raouf__sideCart-product_description-left_countHandler > button{
+    border: none;
+    background-color: #000;
+    color: #fff;
+    font-size: 16px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+.raouf__sideCart-product_description-left_countHandler > input {
+    outline: none;
+    font-size: 16px;
+    border: 2px solid #000;
+}
+
+.raouf__sideCart-product_description-right{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    font-size: 22px;
+    font-weight: 600;
+}
+
+.raouf__sideCart-product_description-right > svg {
+    align-self: flex-end;
+    cursor: pointer;
+}
+
+@media screen and (max-width: 450px){
+    .raouf__sideCart-product{
+        flex-direction: column;
+        gap: 0.5rem;
+    }
+    .raouf__sideCart-product_description{
+        flex-direction: column;
+        gap: 1.25rem;
+    }
+
+    .raouf__sideCart-product_description-left{
+        text-align: center;
+    }
+    .raouf__sideCart-product_description-left_countHandler{
+        justify-content: center;
+    }
+    .raouf__sideCart-product_description-right{
+        flex-direction: row;
+    }
+}

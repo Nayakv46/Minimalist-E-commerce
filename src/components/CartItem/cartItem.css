@@ -1,0 +1,106 @@
+.raouf__cartItem{
+    display: flex;
+    gap: 2rem;
+    max-width: 50rem;
+    width: 100%;
+    border-radius: 15px;
+    box-shadow: 0px 0px 15px 1px rgba(0,0,0,0.2);
+    padding: 0.5rem;
+}
+
+.raouf__cartItem-image{
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.raouf__cartItem-image > a > img {
+    width: 100%;
+    border-radius: 30px;
+}
+
+.raouf__cartItem-description{
+    flex: 3;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 1rem;
+    padding: 1rem;
+
+}
+
+.raouf__cartItem-description_left{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 1rem;
+}
+.raouf__cartItem-description_left > a {
+    font-size: 24px;
+    font-weight: 500;
+    text-decoration: none;
+    color: #000;
+}
+.raouf__cartItem-description_left-countHandler{
+    display: flex;
+}
+
+.raouf__cartItem-description_left-countHandler > button,
+.raouf__cartItem-description_left-countHandler > input {
+    text-align: center;
+    height: 30px;
+    width: 30px;
+    border-radius: 0px;
+}
+
+.raouf__cartItem-description_left-countHandler > button{
+    border: none;
+    background-color: #000;
+    color: #fff;
+    font-size: 16px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+.raouf__cartItem-description_left-countHandler > input {
+    outline: none;
+    font-size: 16px;
+    border: 2px solid #000;
+}
+
+.raouf__cartItem-description_right{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    font-size: 24px;
+    font-weight: 600;
+}
+
+.raouf__cartItem-description_right > svg {
+    cursor: pointer;
+    align-self: flex-end;
+}
+
+@media screen and (max-width: 500px){
+    .raouf__cartItem{
+        flex-direction: column;
+        padding: 1rem;
+        gap: 1rem;
+    }
+    .raouf__cartItem-description{
+        padding: 0rem 1rem 1rem 1rem;
+        flex-direction: column;
+        gap: 1.5rem;
+    }
+    .raouf__cartItem-description_left{
+        align-items: center;
+    }
+    .raouf__cartItem-description_right{
+        flex-direction: row;
+    }
+
+}

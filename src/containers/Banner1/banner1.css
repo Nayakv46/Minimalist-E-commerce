@@ -1,0 +1,94 @@
+.raouf__banner1{
+    display: flex;
+    justify-content: center;
+    padding: 0rem 1.25rem 2rem 1.25rem;
+}
+
+.raouf__banner1-content{
+    max-width: 1200px;
+    width: 100%;
+    height: 25rem;
+    display: flex;
+    background-color: #e9e9e9;
+}
+
+.raouf__banner1-content_text{
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    
+}
+
+.raouf__banner1-content_text > h2,
+.raouf__banner1-content_text > p,
+.raouf__banner1-content_text > a {
+    display: flex;
+    justify-content: flex-start;
+    max-width: 27.5rem;
+    width: 100%;
+    padding: 0 5rem;
+}
+.raouf__banner1-content_text > h2{
+    font-size: 32px;
+    font-weight: 600;
+}
+
+.raouf__banner1-content_text > p{
+    font-size: 18px;
+    font-weight: 500;
+}
+
+.raouf__banner1-content_text > a {
+    text-decoration: none;
+}
+.raouf__banner1-content_text > a > button{
+    background-color: #000;
+    border: 2px solid #000;
+    color: #fff;
+    cursor: pointer;
+    font-size: 17px;
+    font-weight: 700;
+    padding: 0.75rem;
+    text-transform: uppercase;
+    transition: all .15s;
+}
+
+.raouf__banner1-content_text > a > button:hover{
+    background-color: #fff;
+    color: #000;
+}
+
+.raouf__banner1-content_image{
+    flex: 1;
+}
+
+.raouf__banner1-content_image > img {
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+}
+
+@media screen and (max-width: 900px){
+    .raouf__banner1-content_text > h2,
+    .raouf__banner1-content_text > p,
+    .raouf__banner1-content_text > a {
+        padding: 0 3rem;
+    }
+}
+
+@media screen and (max-width: 735px){
+    .raouf__banner1-content_text > h2,
+    .raouf__banner1-content_text > p,
+    .raouf__banner1-content_text > a {
+        padding: 0 1rem;
+    }
+}
+
+@media screen and (max-width: 600px){
+    .raouf__banner1-content_image{
+        display: none;
+    }
+}

@@ -1,0 +1,39 @@
+.raouf__footer{
+    display: flex;
+    justify-content: center;
+    min-height: 10.625rem;
+    background-color: #000;
+}
+
+.raouf__footer-content{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 1.75rem;
+    align-items: center;
+}
+
+.raouf__footer-content_links{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    gap: 1.875rem;
+    flex-wrap: wrap;
+    font-weight: 500;
+    font-size: 18px;
+}
+.raouf__footer-content_links > a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.raouf__footer-content_links > a:hover{
+    text-decoration: underline;
+}
+
+.raouf__footer-content_note{
+    font-weight: 500;
+    font-size: 17px;
+    text-align: center;
+    color: #fff;
+}

@@ -1,0 +1,60 @@
+.raouf__newsletter{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 17.5rem;
+    background-color: #191919;
+}
+
+.raouf__newsletter-content{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1.25rem;
+}
+
+.raouf__newsletter-content > h2 {
+    font-size: 35px;
+    color: #fff;
+}
+
+.raouf__newsletter-content > form {
+    display: flex;
+    gap: 0.5rem;
+}
+
+.raouf__newsletter-content > form > input,
+.raouf__newsletter-content > form > button{
+    font-size: 17px;
+    padding: 0.5rem;
+    border: none;
+    outline: none;
+    font-weight: 500;
+    border-radius: 0px;
+}
+
+.raouf__newsletter-content > form > button {
+    cursor: pointer;
+    background: #fff;
+    color: #000;
+}
+
+@media screen and (max-width: 350px){
+    .raouf__newsletter-content{
+        width: 100%;
+        flex: 1;
+    }
+    .raouf__newsletter{
+        width: 100%;
+        flex: 1;
+    }
+    .raouf__newsletter-content > form {
+        width: 85%;
+        flex-direction: column;
+    }
+
+    .raouf__newsletter-content > form > input,
+    .raouf__newsletter-content > form > button{
+        width: 100%;
+    }
+}

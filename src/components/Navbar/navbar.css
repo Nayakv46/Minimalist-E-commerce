@@ -1,0 +1,138 @@
+.raouf__navbar{
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  background-color: #fff;
+  box-shadow: 0 4px 5px -5px rgba(0,0,0,.23);
+  position: fixed;
+  top: 0;
+  height: 80px;
+  z-index: 50;
+  padding: 0 1.25rem;
+}
+.raouf__navbar-content {
+  width: 100%;
+  max-width: 1200px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: #000;
+}
+
+.raouf__navbar-content_logo > a {
+  display: flex;
+  align-items: center;
+}
+
+.raouf__navbar-content_logo > a > img{
+  width: 85px;
+  height: auto;
+  cursor: pointer;
+}
+  
+.raouf__navbar-content_links {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+}
+  
+.raouf__navbar-content_links > a {
+  text-decoration: none;
+  color: #000;
+  font-size: 18px;
+  font-weight: 500;
+}
+
+.raouf__navbar-content_links > button {
+  position: relative;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  border: none;
+  background: none;
+  
+}
+
+.raouf__navbar-content_links > button > svg{
+  color: #000;
+}
+
+.raouf__navbar-content_links > svg { 
+  display: none;
+  cursor: pointer;
+}
+
+.raouf__navbar-content_links-cart{
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: #fff;
+  font-size: 13px;
+  height: 20px;
+  width: 20px;
+  text-align: center;
+  border-radius: 50%;
+  background-color: #b6002c;
+  top: -0.75rem;
+  left: 0.75rem;
+
+}
+
+
+
+.raouf__navbar-mobile{
+  align-items: center;
+  background-color: #fff;
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  justify-content: center;
+  align-items: center;
+  gap: 1.875rem;
+  position: fixed;
+  text-align: center;
+  top: 0;
+  transition: all 300ms ease-in-out;
+  width: 100%;
+  z-index: 100;
+}
+
+.open-menu{
+  left: 0;
+}
+
+.closed-menu{
+  left: -101%;
+}
+
+.raouf__navbar-mobile > svg {
+  position: absolute;
+  top: 2rem;
+  right: 2rem;
+  cursor: pointer;
+}
+
+.raouf__navbar-mobile > a{
+  text-decoration: none;
+  color: black;
+  font-family: var(--font-family);
+  font-size: 32px;
+  font-weight: 500;
+  transition: 200ms ease;
+}
+
+.raouf__navbar-mobile > a:hover{
+  color: var(--color-red);
+}
+
+@media screen and (max-width: 600px){
+  .raouf__navbar-content_links > a:nth-child(1),
+  .raouf__navbar-content_links > a:nth-child(2){
+    display: none;
+  }
+  .raouf__navbar-content_links > svg {
+    display: flex;
+  }
+}

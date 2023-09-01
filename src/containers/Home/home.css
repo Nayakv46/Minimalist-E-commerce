@@ -1,0 +1,119 @@
+.raouf__home{
+    display: flex;
+    justify-content: center;
+    padding: 6.5rem 1.25rem 2rem 1.25rem;
+}
+
+.raouf__home-content{
+    max-width: 1200px;
+    width: 100%;
+    height: 31.25rem;
+    display: grid;
+    gap: 0.75rem;
+    grid-template-areas: 
+        "one three four"
+        "one three four-bottom";
+    grid-template-columns: 2fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+
+}
+
+.featured{
+    position: relative;
+    cursor: pointer;
+    overflow: hidden;
+}
+
+.grid-one{
+    grid-area: one;
+}
+
+.grid-three{
+    grid-area: three;
+}
+
+.grid-four{
+    grid-area: four;
+}
+
+.grid-four-bottom{
+    grid-area: four-bottom;
+}
+
+.dark-overlay{
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    left: 0;
+    top: 0;
+    background-color: rgba(0,0,0,.3);
+    transition: all .3s ease-in;
+}
+
+.dark-overlay:hover{
+    background-color: rgba(0,0,0,0.5);
+}
+
+.featured img {
+    height: 100%;
+    object-fit: cover;
+    object-position: 50% 50%;
+    width: 100%;
+}
+
+.featured > a > p{
+    bottom: 1.25rem;
+    color: #fff;
+    font-size: 38px;
+    font-weight: 600;
+    left: 1.25rem;
+    position: absolute;
+
+}
+
+@media screen and (max-width: 900px){
+    .featured > a > p{
+        font-size: 32px;
+    }
+}
+
+@media screen and (max-width: 750px){
+    .raouf__home-content{
+        grid-template-columns: 1fr 1fr;
+        grid-template-areas: 
+            "one three"
+            "four four-bottom";
+    }
+}
+
+@media screen and (max-width: 500px){
+    .featured > a > p{
+        font-size: 28px;
+    }
+}
+
+@media screen and (max-width: 450px){
+    .featured > a > p{
+        font-size: 26px;
+        bottom: 0.5rem;
+        left: 0.75rem;
+    }
+}
+
+@media screen and (max-width: 400px){
+    .featured > a > p{
+        font-size: 22px;
+    }
+}
+
+@media screen and (max-width: 340px){
+    .raouf__home-content{
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr 1fr 1fr;
+        grid-template-areas: 
+            "one"
+            "three"
+            "four"
+            "four-bottom";
+    }
+}

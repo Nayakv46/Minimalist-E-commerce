@@ -1,0 +1,159 @@
+.raouf__sideCart{
+    position: fixed;
+    top: 0;
+    right: 0;
+    display: flex;
+    padding: 1.125rem;
+    height: 100%;
+    width: 30rem;
+    background: #fff;
+    z-index: 100;
+    transition: all 250ms ease-in-out;
+}
+
+.open-sideCart{
+    top: 0;
+    right: 0;
+}
+
+.closed-sideCart{
+    right: -36rem;
+}
+
+.raouf__sideCart > svg{
+    position: absolute;
+    top: 1.5rem;
+    right: 0.875rem;
+    cursor: pointer;
+}
+
+.raouf__sideCart-content{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    gap: 1rem;
+}
+
+.raouf__sideCart-content > h2 {
+    font-size: 24px;
+}
+
+.raouf__sideCart-content_products{
+    width: 100%;
+    height: 70%;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    overflow-y: scroll;
+    padding: 0.25rem;
+}
+
+.raouf__sideCart-content_total{
+    display: flex;
+    justify-content: space-between;
+    border-top: 2px dashed #000; 
+    padding-top: 0.5rem;
+}
+
+.raouf__sideCart-content_total-left{
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+
+}
+
+.raouf__sideCart-content_total-left > h2 {
+    font-size: 26px;
+    font-weight: 600;
+    
+}
+
+.raouf__sideCart-content_total-right{
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-end;
+
+}
+.raouf__sideCart-content_total-right > a > button {
+    border: 2px solid #000;
+    padding: 0.5rem 1rem;
+    background-color: #fff;
+    color: #000;
+    font-size: 20px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 250ms ease-in-out;
+}
+
+.raouf__sideCart-content_total-right > a > button:hover{
+    background-color: #000;
+    color: #fff;
+}
+
+.sideCart-overlay{
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,0.5);
+    z-index: 50;
+}
+
+.show-overlay{
+    display: flex;
+}
+
+.hide-overlay{
+    display: none;
+}
+
+.raouf__sideCart-empty{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+    padding-top: 10rem;
+}
+
+.raouf__sideCart-empty > img {
+    width: 10rem;
+    height: auto;
+
+}
+
+.raouf__sideCart-empty > p {
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.raouf__sideCart-empty > button {
+    border: 2px solid #000;
+    padding: 0.5rem 1rem;
+    background-color: #fff;
+    font-size: 20px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 250ms ease-in-out;
+    color: #000;
+}
+
+.raouf__sideCart-empty > button:hover{
+    background-color: #000;
+    color: #fff;
+}
+
+@media screen and (max-width: 550px){
+    .raouf__sideCart{
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 450px){
+    .raouf__sideCart-content_products{
+        gap: 0.75rem;
+    }
+    .raouf__sideCart-content_total{
+        flex-direction: column;
+        align-items: center;
+        gap: 2rem;
+    }
+}
